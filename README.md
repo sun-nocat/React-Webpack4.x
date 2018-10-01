@@ -90,3 +90,17 @@
       ~~~
 
     - 因为插件会将打包之后的main.js文件插入到index.html文件中，所以不需要再index.html文件中手动引入main.js文件。
+
+## JSX语法
+> 什么是JSX语法，符合html规范的JS语法；
+
+### 如何使用jsx语法？
+- 安装`babel`插件
+  - 运行 `npm install babel-core babel-loader babel-plugin-transform-runtime -D`
+  - 运行 `cpm install babel-preset-env babel-preset-stage-0 -D`
+- 安装能够识别转换jsx语法的包`babel-preset-react`
+  - 运行 `npm install babel-preset-react -D`
+
+
+## 在项目中使用react
+- 运行 `npm install react react-dom -S` -s 指从开发到上线都要用到的模块
