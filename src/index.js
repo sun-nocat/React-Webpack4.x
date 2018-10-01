@@ -10,12 +10,16 @@ import ReactDom from 'react-dom' //把创建好的组件 和 虚拟dom 放到页
 //参数3 子节点 包括 其他 虚拟dom 获取 文本子节点
 //参数n 其他节点
 
-const myh1 =  React.createElement('h1',{id:'myh1',title:"miao"},'文本子节点')
+// const myh1 =  React.createElement('h1',{id:'myh1',title:"miao"},'文本子节点')
 
 //3 使用ReactDOM 把虚拟DOM渲染到页面上
 //参数1 要渲染的页面的节点
 //参数2 指定要渲染的页面
 
-ReactDom.render(myh1,document.getElementById("app"));
+//4 这种在js中写html的语法就是jsx语法
+//jsx在运行的时候，是被转换成React.creactElement()进行运行的
+var mydiv = <div id="mydiv" title="divTitle">这是一个div</div>
+
+ReactDom.render(mydiv,document.getElementById("app"));
 
 
